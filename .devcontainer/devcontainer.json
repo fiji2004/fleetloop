@@ -7,6 +7,6 @@
   "forwardPorts": [6080],
   "portsAttributes": { "6080": { "label": "desktop" } },
   "containerEnv": { "DISPLAY": ":1" },
-  "postCreateCommand": "echo 'source /opt/ros/lyrical/setup.bash' >> ~/.bashrc",
+  "postCreateCommand": "apt update && apt install -y ros-dev-tools && echo 'source /opt/ros/lyrical/setup.bash' >> ~/.bashrc",
   "customizations": { "vscode": { "extensions": ["ms-python.python"] } }
 }
